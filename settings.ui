@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MCPP3</class>
+ <widget class="QMainWindow" name="MCPP3">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>491</width>
+    <height>333</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MCPP</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="minecraft.qrc">
+    <normaloff>:/icons/MCPP.ico</normaloff>:/icons/MCPP.ico</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-image: url(:/background/bg32.png);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="DoneB">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>260</y>
+      <width>231</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Minecraft Rus</family>
+      <pointsize>12</pointsize>
+      <stylestrategy>NoAntialias</stylestrategy>
+      <kerning>false</kerning>
+     </font>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+    height: 61px;
+    width: 231px;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+	background: url(:/buttons/btn.png) no-repeat;
+	line-height: 26px;
+    border: 2px solid black;
+	padding-top: 6px;}
+QPushButton:Hover{
+   border: 2px solid white;}
+QPushButton:Focus{
+   outline: none;
+   border: none;}
+
+</string>
+    </property>
+    <property name="text">
+     <string>Done</string>
+    </property>
+    <property name="icon">
+     <iconset theme=",">
+      <normaloff>.</normaloff>.</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>16</width>
+      <height>16</height>
+     </size>
+    </property>
+    <property name="default">
+     <bool>false</bool>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="SkyB">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>231</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Minecraft Rus</family>
+      <pointsize>12</pointsize>
+      <stylestrategy>NoAntialias</stylestrategy>
+      <kerning>false</kerning>
+     </font>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+    height: 61px;
+    width: 231px;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+	background: url(:/buttons/btn.png) no-repeat;
+	line-height: 26px;
+    border: 2px solid black;
+	padding-top: 6px;}
+QPushButton:Hover{
+   border: 2px solid white;}
+QPushButton:Focus{
+   outline: none;
+   border: none;}
+
+</string>
+    </property>
+    <property name="text">
+     <string>Sky</string>
+    </property>
+    <property name="icon">
+     <iconset theme=",">
+      <normaloff>.</normaloff>.</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>16</width>
+      <height>16</height>
+     </size>
+    </property>
+    <property name="default">
+     <bool>false</bool>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="FontB">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>80</y>
+      <width>231</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Minecraft Rus</family>
+      <pointsize>12</pointsize>
+      <stylestrategy>NoAntialias</stylestrategy>
+      <kerning>false</kerning>
+     </font>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+    height: 61px;
+    width: 231px;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+	background: url(:/buttons/btn.png) no-repeat;
+	line-height: 26px;
+    border: 2px solid black;
+	padding-top: 6px;}
+QPushButton:Hover{
+   border: 2px solid white;}
+QPushButton:Focus{
+   outline: none;
+   border: none;}
+
+</string>
+    </property>
+    <property name="text">
+     <string>Fonts</string>
+    </property>
+    <property name="icon">
+     <iconset theme=",">
+      <normaloff>.</normaloff>.</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>16</width>
+      <height>16</height>
+     </size>
+    </property>
+    <property name="default">
+     <bool>false</bool>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="EntityB">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>150</y>
+      <width>231</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Minecraft Rus</family>
+      <pointsize>12</pointsize>
+      <stylestrategy>NoAntialias</stylestrategy>
+      <kerning>false</kerning>
+     </font>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+    height: 61px;
+    width: 231px;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+	background: url(:/buttons/btn.png) no-repeat;
+	line-height: 26px;
+    border: 2px solid black;
+	padding-top: 6px;}
+QPushButton:Hover{
+   border: 2px solid white;}
+QPushButton:Focus{
+   outline: none;
+   border: none;}
+
+</string>
+    </property>
+    <property name="text">
+     <string>Entity</string>
+    </property>
+    <property name="icon">
+     <iconset theme=",">
+      <normaloff>.</normaloff>.</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>16</width>
+      <height>16</height>
+     </size>
+    </property>
+    <property name="default">
+     <bool>false</bool>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="TexturesB">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>10</y>
+      <width>231</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Minecraft Rus</family>
+      <pointsize>12</pointsize>
+      <stylestrategy>NoAntialias</stylestrategy>
+      <kerning>false</kerning>
+     </font>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+    height: 61px;
+    width: 231px;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+	background: url(:/buttons/btn.png) no-repeat;
+	line-height: 26px;
+    border: 2px solid black;
+	padding-top: 6px;}
+QPushButton:Hover{
+   border: 2px solid white;}
+QPushButton:Focus{
+   outline: none;
+   border: none;}
+
+</string>
+    </property>
+    <property name="text">
+     <string>Textures</string>
+    </property>
+    <property name="icon">
+     <iconset theme=",">
+      <normaloff>.</normaloff>.</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>16</width>
+      <height>16</height>
+     </size>
+    </property>
+    <property name="default">
+     <bool>false</bool>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="OncloseB">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>80</y>
+      <width>231</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Minecraft Rus</family>
+      <pointsize>12</pointsize>
+      <stylestrategy>NoAntialias</stylestrategy>
+      <kerning>false</kerning>
+     </font>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+    height: 61px;
+    width: 231px;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+	background: url(:/buttons/btn.png) no-repeat;
+	line-height: 26px;
+    border: 2px solid black;
+	padding-top: 6px;}
+QPushButton:Hover{
+   border: 2px solid white;}
+QPushButton:Focus{
+   outline: none;
+   border: none;}
+
+</string>
+    </property>
+    <property name="text">
+     <string>On close</string>
+    </property>
+    <property name="icon">
+     <iconset theme=",">
+      <normaloff>.</normaloff>.</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>16</width>
+      <height>16</height>
+     </size>
+    </property>
+    <property name="default">
+     <bool>false</bool>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="SupportB">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>150</y>
+      <width>231</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Minecraft Rus</family>
+      <pointsize>12</pointsize>
+      <stylestrategy>NoAntialias</stylestrategy>
+      <kerning>false</kerning>
+     </font>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+    height: 61px;
+    width: 231px;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+	background: url(:/buttons/btn.png) no-repeat;
+	line-height: 26px;
+    border: 2px solid black;
+	padding-top: 6px;}
+QPushButton:Hover{
+   border: 2px solid white;}
+QPushButton:Focus{
+   outline: none;
+   border: none;}
+
+</string>
+    </property>
+    <property name="text">
+     <string>Support creator</string>
+    </property>
+    <property name="icon">
+     <iconset theme=",">
+      <normaloff>.</normaloff>.</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>16</width>
+      <height>16</height>
+     </size>
+    </property>
+    <property name="default">
+     <bool>false</bool>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="minecraft.qrc"/>
+ </resources>
+ <connections/>
+</ui>
