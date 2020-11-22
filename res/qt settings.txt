@@ -1,0 +1,17 @@
+### text shadow ###
+from PyQt5.QtWidgets import *
+from PyQt5.QtGui import * 
+
+shadow = QGraphicsDropShadowEffect()
+shadow.setXOffset(2)
+shadow.setYOffset(2)
+shadow.setColor(QColor(64, 64, 64, 255))
+shadow.setBlurRadius(0)
+self.label.setGraphicsEffect(shadow)
+
+stylesheet
+color: #FFFFFF;\nbackground-color: #262528;
+
+### no mouse event on label ###
+
+self.label1.setAttribute(QtCore.Qt.WA_TransparentForMouseEvents, True)

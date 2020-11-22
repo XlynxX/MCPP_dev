@@ -1,0 +1,1 @@
+pyinstaller --onefile -w -i C:\Users\Lynx\Desktop\qt\res\MCPP.ico C:\Users\Lynx\Desktop\qt\main.py

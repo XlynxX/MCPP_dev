@@ -1,0 +1,26 @@
+<RCC>
+  <qresource prefix="background">
+    <file>res/background.png</file>
+  </qresource>
+  <qresource prefix="lang">
+    <file>test.qm</file>
+  </qresource>
+  <qresource prefix="icons">
+    <file>res/MCPP.ico</file>
+  </qresource>
+  <qresource prefix="fonts">
+    <file>res/Minecraft.ttf</file>
+  </qresource>
+  <qresource prefix="sounds">
+    <file>res/click.wav</file>
+  </qresource>
+  <qresource prefix="buttons">
+    <file>res/btn_lang_hover.png</file>
+    <file>res/btn_lang.png</file>
+    <file>res/btn_big.png</file>
+    <file>res/btn_big_hover.png</file>
+    <file>res/btn_default.png</file>
+    <file>res/btn_hover.png</file>
+    <file>res/btn_inactive.png</file>
+  </qresource>
+</RCC>
