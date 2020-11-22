@@ -42,8 +42,6 @@ class MainScreen(QtWidgets.QMainWindow, MCPP.Ui_MainWindow):
         # и т.д. в файле MCPP.py
         super().__init__()
         self.setupUi(self)  # Это нужно для инициализации нашего дизайна
-        #message = self.tr('Apple')
-        #print(message)
         
         # Повторяющиеся для QLabel функции
         for child in self.findChildren(QLabel):
@@ -62,10 +60,15 @@ class MainScreen(QtWidgets.QMainWindow, MCPP.Ui_MainWindow):
             # Вызов функции проигрывания звука при нажатии
             child.clicked.connect(self.Play)
         
-        self.pushButton1.clicked.connect(self.test)  # Выполнить функцию test при нажатии
+        self.pushButton1.clicked.connect(self.en)  # Выполнить функцию test при нажатии
         self.threadpool = QThreadPool() # Это нужно для создания потока
         print("Доступно потоков %d " % self.threadpool.maxThreadCount()) # Доступное количество потоков
-        self.label1.setText(QApplication.translate('app', 'Открыть ресурспак'))
+        
+        # Встраивание текста с переводом
+        self.label1.setText(QApplication.translate('app', 'Открыть  ресурспак'))
+        self.label2.setText(QApplication.translate('app', 'Модификации'))
+        self.label3.setText(QApplication.translate('app', 'Настройки...'))
+        self.label4.setText(QApplication.translate('app', 'Конвертировать'))
     
     def thread_test(self):
         print('Работает!')
@@ -80,20 +83,36 @@ class MainScreen(QtWidgets.QMainWindow, MCPP.Ui_MainWindow):
     def Play(self):
         QSound.play(":/sounds/res/click.wav")
 
+    def en(self):
+        #create a new translator and load the desired translation file
+        translator = QtCore.QTranslator(app)
+        translator.load(":/lang/lang/en_US")
+        #install translator to the app 
+        #app is the variable created in (if __name__ == "__main__":) section, make it gloabl
+        app.installTranslator(translator)
+        #call retranslateUi on ui, which is defined in the same section as app
+        #MainWindow : created in the same section 
+        #self.retranslateUi(QtWidgets.QMainWindow())
+        self.label1.setText(QApplication.translate('app', 'Открыть  ресурспак'))
+        self.label2.setText(QApplication.translate('app', 'Модификации'))
+        self.label3.setText(QApplication.translate('app', 'Настройки...'))
+        self.label4.setText(QApplication.translate('app', 'Конвертировать'))
+        if not app.installTranslator(translator):
+            print("Can not install translation!")
+
 def main():
+    global app
     app = QtWidgets.QApplication(sys.argv)  # Новый экземпляр QApplication
     
+    # Загрузка перевода
     translator = QtCore.QTranslator(app)
-    translator.load(':/lang/test')
+    translator.load(':/lang/lang/ru_US')
     app.installTranslator(translator)
     if not app.installTranslator(translator):
         print("Can not install translation!")
+    # Загрузка перевода
     
     window = MainScreen()  # Создаём объект класса MainScreen
-
-    
-
-
 
     # Загружаем кастомные шрифты
     MCPP = QtWidgets.QMainWindow()

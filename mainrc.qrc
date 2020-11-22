@@ -3,7 +3,7 @@
     <file>res/background.png</file>
   </qresource>
   <qresource prefix="lang">
-    <file>test.qm</file>
+    <file>lang/en_US.qm</file>
   </qresource>
   <qresource prefix="icons">
     <file>res/MCPP.ico</file>
