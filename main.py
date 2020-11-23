@@ -8,6 +8,7 @@ import MCPP, MCPP2
 import sys
 import time
 
+
 # THREAD
 class Worker(QRunnable):
 
@@ -50,8 +51,8 @@ class SettingsScreen(QtWidgets.QMainWindow, MCPP2.Ui_MainWindow):
                 child.clicked.connect(MainScreen.Play)
 
             # Привязка кнопок к функциям
-            self.pushButton1.clicked.connect(self.retranslate)
-            self.pushButton2.clicked.connect(self.retranslate)
+            self.pushButton1.clicked.connect(lambda: self.retranslate('ru_RU'))
+            self.pushButton2.clicked.connect(lambda: self.retranslate('en_US'))
             self.doneButton.clicked.connect(self.close_lang_settings)
             # Привязка кнопок к функциям
 
@@ -69,14 +70,13 @@ class SettingsScreen(QtWidgets.QMainWindow, MCPP2.Ui_MainWindow):
 
 
         # Встраивание текста с переводом
-        def retranslate(self):
+        def retranslate(self, lang):
             translator = QtCore.QTranslator(self)
-            #print(lang)
-            #if word == 'en_US':
-                #translator.load(':/lang/lang/en_US')
-            #else:
-                #translator.load(':/lang/lang/ru_RU')
-            translator.load(':/lang/lang/en_US')
+            print(lang)
+            if lang == 'en_US':
+                translator.load(':/lang/lang/en_US')
+            else:
+                translator.load(':/lang/lang/ru_RU')
             QApplication.installTranslator(translator)
             
             self.label1.setText(QApplication.translate('app', 'Языки'))
@@ -147,7 +147,7 @@ class MainScreen(QtWidgets.QMainWindow, MCPP.Ui_MainWindow):
         print('Работает!')
 
     def open_lang_settings(self):
-        #self.hide()
+        self.close()
         self.settings = SettingsScreen()
         self.settings.show()
     
