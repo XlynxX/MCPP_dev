@@ -59,6 +59,7 @@ class MainScreen(QtWidgets.QMainWindow, MCPP.Ui_MainWindow):
             child.clicked.connect(self.Play)
         
         self.langButton.clicked.connect(self.retranslate)  # Выполнить функцию test при нажатии
+        self.pushButton1.clicked.connect(self.test)
         self.threadpool = QThreadPool() # Это нужно для создания потока
         print("Доступно потоков %d " % self.threadpool.maxThreadCount()) # Доступное количество потоков
 
