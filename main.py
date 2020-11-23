@@ -73,7 +73,6 @@ class MainScreen(QtWidgets.QMainWindow, MCPP.Ui_MainWindow):
         self.label2.setText(QApplication.translate('app', 'Модификации'))
         self.label3.setText(QApplication.translate('app', 'Настройки...'))
         self.label4.setText(QApplication.translate('app', 'Конвертировать'))
-
         if not QApplication.installTranslator(translator):
             print("Can not install translation!")
     # Встраивание текста с переводом
