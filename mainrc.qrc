@@ -3,6 +3,7 @@
     <file>res/background.png</file>
   </qresource>
   <qresource prefix="lang">
+    <file>lang/ru_RU.qm</file>
     <file>lang/en_US.qm</file>
   </qresource>
   <qresource prefix="icons">
