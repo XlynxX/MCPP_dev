@@ -91,23 +91,6 @@ class MainScreen(QtWidgets.QMainWindow, MCPP.Ui_MainWindow):
     def Play(self):
         QSound.play(":/sounds/res/click.wav")
 
-    #def en(self):
-        #create a new translator and load the desired translation file
-        #translator = QtCore.QTranslator(app)
-        #translator.load(":/lang/lang/en_US")
-        #install translator to the app 
-        #app is the variable created in (if __name__ == "__main__":) section, make it gloabl
-        #app.installTranslator(translator)
-        #call retranslateUi on ui, which is defined in the same section as app
-        #MainWindow : created in the same section 
-        #self.retranslateUi(QtWidgets.QMainWindow())
-        #self.label1.setText(QApplication.translate('app', 'Открыть  ресурспак'))
-        #self.label2.setText(QApplication.translate('app', 'Модификации'))
-        #self.label3.setText(QApplication.translate('app', 'Настройки...'))
-        #self.label4.setText(QApplication.translate('app', 'Конвертировать'))
-        #if not app.installTranslator(translator):
-            #print("Can not install translation!")
-
 def main():
     app = QtWidgets.QApplication(sys.argv)  # Новый экземпляр QApplication
     
