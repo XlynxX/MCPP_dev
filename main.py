@@ -80,7 +80,7 @@ class MainScreen(QtWidgets.QMainWindow, MCPP.Ui_MainWindow):
             QApplication.installTranslator(translator)
             
             # Окно настроек
-            self.label3_2.setText(QApplication.translate('app', 'Языки'))
+            self.label3_2.setText(QApplication.translate('app', 'Язык...'))
             self.label1_2.setText(QApplication.translate('app', 'Русский'))
             self.label2_2.setText(QApplication.translate('app', 'Английский'))
             self.labelDone.setText(QApplication.translate('app', 'Готово'))

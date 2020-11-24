@@ -377,64 +377,25 @@ class Ui_MainWindow(object):
         self.labelDone.setInputMethodHints(Qt.ImhNone)
         self.labelDone.setAlignment(Qt.AlignCenter)
         self.labelDone.setTextInteractionFlags(Qt.NoTextInteraction)
-        self.en_btn = QPushButton(self.page_2)
-        self.en_btn.setObjectName(u"en_btn")
-        self.en_btn.setEnabled(True)
-        self.en_btn.setGeometry(QRect(50, 89, 300, 40))
-        sizePolicy1.setHeightForWidth(self.en_btn.sizePolicy().hasHeightForWidth())
-        self.en_btn.setSizePolicy(sizePolicy1)
-        self.en_btn.setFont(font)
-        self.en_btn.setMouseTracking(False)
-        self.en_btn.setFocusPolicy(Qt.NoFocus)
-        self.en_btn.setLayoutDirection(Qt.LeftToRight)
-        self.en_btn.setAutoFillBackground(False)
-        self.en_btn.setStyleSheet(u"QPushButton\n"
-"{\n"
-"	\n"
-"	\n"
-"	border-image: url(:/buttons/res/btn_default.png);\n"
-"	padding: 0;\n"
-"	border: none;\n"
-"	text-decoration: none;\n"
-"	text-align: center;\n"
-"	color: white;\n"
-"	padding-top: 0px;\n"
-"}\n"
-"QPushButton:hover\n"
-"{\n"
-"	\n"
-"	\n"
-"	border-image: url(:/buttons/res/btn_hover.png);\n"
-"}")
-        self.en_btn.setFlat(False)
         self.ru_btn = QPushButton(self.page_2)
         self.ru_btn.setObjectName(u"ru_btn")
         self.ru_btn.setEnabled(True)
-        self.ru_btn.setGeometry(QRect(50, 41, 300, 40))
+        self.ru_btn.setGeometry(QRect(17, 47, 369, 36))
         sizePolicy1.setHeightForWidth(self.ru_btn.sizePolicy().hasHeightForWidth())
         self.ru_btn.setSizePolicy(sizePolicy1)
         self.ru_btn.setFont(font)
         self.ru_btn.setMouseTracking(False)
-        self.ru_btn.setFocusPolicy(Qt.NoFocus)
+        self.ru_btn.setFocusPolicy(Qt.StrongFocus)
         self.ru_btn.setLayoutDirection(Qt.LeftToRight)
         self.ru_btn.setAutoFillBackground(False)
         self.ru_btn.setStyleSheet(u"QPushButton\n"
 "{\n"
-"	\n"
-"	\n"
-"	border-image: url(:/buttons/res/btn_default.png);\n"
-"	padding: 0;\n"
+"	background: transparent;\n"
 "	border: none;\n"
-"	text-decoration: none;\n"
-"	text-align: center;\n"
-"	color: white;\n"
-"	padding-top: 0px;\n"
 "}\n"
-"QPushButton:hover\n"
+"QPushButton:focus\n"
 "{\n"
-"	\n"
-"	\n"
-"	border-image: url(:/buttons/res/btn_hover.png);\n"
+"	border-image: url(:/buttons/res/lang_btn.png);\n"
 "}")
         self.ru_btn.setFlat(False)
         self.label2_2 = QLabel(self.page_2)
@@ -507,11 +468,32 @@ class Ui_MainWindow(object):
         self.label3_2.setInputMethodHints(Qt.ImhNone)
         self.label3_2.setAlignment(Qt.AlignCenter)
         self.label3_2.setTextInteractionFlags(Qt.NoTextInteraction)
+        self.en_btn = QPushButton(self.page_2)
+        self.en_btn.setObjectName(u"en_btn")
+        self.en_btn.setEnabled(True)
+        self.en_btn.setGeometry(QRect(17, 95, 369, 36))
+        sizePolicy1.setHeightForWidth(self.en_btn.sizePolicy().hasHeightForWidth())
+        self.en_btn.setSizePolicy(sizePolicy1)
+        self.en_btn.setFont(font)
+        self.en_btn.setMouseTracking(False)
+        self.en_btn.setFocusPolicy(Qt.StrongFocus)
+        self.en_btn.setLayoutDirection(Qt.LeftToRight)
+        self.en_btn.setAutoFillBackground(False)
+        self.en_btn.setStyleSheet(u"QPushButton\n"
+"{\n"
+"	background: transparent;\n"
+"	border: none;\n"
+"}\n"
+"QPushButton:focus\n"
+"{\n"
+"	border-image: url(:/buttons/res/lang_btn.png);\n"
+"}")
+        self.en_btn.setFlat(False)
         self.stackedWidget.addWidget(self.page_2)
         self.ru_btn.raise_()
+        self.en_btn.raise_()
         self.label3_2.raise_()
         self.doneButton.raise_()
-        self.en_btn.raise_()
         self.label1_2.raise_()
         self.labelDone.raise_()
         self.label2_2.raise_()
@@ -556,10 +538,6 @@ class Ui_MainWindow(object):
         self.label1_2.setText(QCoreApplication.translate("MainWindow", u"\u0420\u0443\u0441\u0441\u043a\u0438\u0439", None))
         self.labelDone.setText(QCoreApplication.translate("MainWindow", u"\u0413\u043e\u0442\u043e\u0432\u043e", None))
 #if QT_CONFIG(tooltip)
-        self.en_btn.setToolTip("")
-#endif // QT_CONFIG(tooltip)
-        self.en_btn.setText("")
-#if QT_CONFIG(tooltip)
         self.ru_btn.setToolTip("")
 #endif // QT_CONFIG(tooltip)
         self.ru_btn.setText("")
@@ -568,6 +546,10 @@ class Ui_MainWindow(object):
         self.doneButton.setToolTip("")
 #endif // QT_CONFIG(tooltip)
         self.doneButton.setText("")
-        self.label3_2.setText(QCoreApplication.translate("MainWindow", u"\u042f\u0437\u044b\u043a\u0438", None))
+        self.label3_2.setText(QCoreApplication.translate("MainWindow", u"\u042f\u0437\u044b\u043a...", None))
+#if QT_CONFIG(tooltip)
+        self.en_btn.setToolTip("")
+#endif // QT_CONFIG(tooltip)
+        self.en_btn.setText("")
     # retranslateUi
 

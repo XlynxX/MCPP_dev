@@ -780,63 +780,6 @@ padding-top: 0px;
      <zorder>CopytightLabel</zorder>
     </widget>
     <widget class="QWidget" name="page_2">
-     <widget class="QLabel" name="label1_2">
-      <property name="enabled">
-       <bool>false</bool>
-      </property>
-      <property name="geometry">
-       <rect>
-        <x>50</x>
-        <y>50</y>
-        <width>301</width>
-        <height>21</height>
-       </rect>
-      </property>
-      <property name="sizePolicy">
-       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-        <horstretch>0</horstretch>
-        <verstretch>0</verstretch>
-       </sizepolicy>
-      </property>
-      <property name="font">
-       <font>
-        <family>Minecraft Rus</family>
-        <pointsize>12</pointsize>
-        <underline>false</underline>
-        <strikeout>false</strikeout>
-        <stylestrategy>NoAntialias</stylestrategy>
-        <kerning>false</kerning>
-       </font>
-      </property>
-      <property name="layoutDirection">
-       <enum>Qt::LeftToRight</enum>
-      </property>
-      <property name="autoFillBackground">
-       <bool>false</bool>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">background: none;
-color: #FFFFFF;
-padding: 0;
-border: none;
-text-decoration: none;
-text-align: center;
-padding-top: 0px;
-</string>
-      </property>
-      <property name="inputMethodHints">
-       <set>Qt::ImhNone</set>
-      </property>
-      <property name="text">
-       <string>Русский</string>
-      </property>
-      <property name="alignment">
-       <set>Qt::AlignCenter</set>
-      </property>
-      <property name="textInteractionFlags">
-       <set>Qt::NoTextInteraction</set>
-      </property>
-     </widget>
      <widget class="QLabel" name="labelDone">
       <property name="enabled">
        <bool>false</bool>
@@ -886,124 +829,6 @@ padding-top: 0px;
       </property>
       <property name="text">
        <string>Готово</string>
-      </property>
-      <property name="alignment">
-       <set>Qt::AlignCenter</set>
-      </property>
-      <property name="textInteractionFlags">
-       <set>Qt::NoTextInteraction</set>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="ru_btn">
-      <property name="enabled">
-       <bool>true</bool>
-      </property>
-      <property name="geometry">
-       <rect>
-        <x>17</x>
-        <y>47</y>
-        <width>369</width>
-        <height>36</height>
-       </rect>
-      </property>
-      <property name="sizePolicy">
-       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-        <horstretch>0</horstretch>
-        <verstretch>0</verstretch>
-       </sizepolicy>
-      </property>
-      <property name="font">
-       <font>
-        <family>Minecraft Rus</family>
-        <pointsize>12</pointsize>
-        <underline>false</underline>
-        <strikeout>false</strikeout>
-        <stylestrategy>NoAntialias</stylestrategy>
-        <kerning>false</kerning>
-       </font>
-      </property>
-      <property name="mouseTracking">
-       <bool>false</bool>
-      </property>
-      <property name="focusPolicy">
-       <enum>Qt::StrongFocus</enum>
-      </property>
-      <property name="toolTip">
-       <string/>
-      </property>
-      <property name="layoutDirection">
-       <enum>Qt::LeftToRight</enum>
-      </property>
-      <property name="autoFillBackground">
-       <bool>false</bool>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">QPushButton
-{
-	background: transparent;
-	border: none;
-}
-QPushButton:focus
-{
-	border-image: url(:/buttons/res/lang_btn.png);
-}</string>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="flat">
-       <bool>false</bool>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label2_2">
-      <property name="enabled">
-       <bool>false</bool>
-      </property>
-      <property name="geometry">
-       <rect>
-        <x>50</x>
-        <y>98</y>
-        <width>301</width>
-        <height>21</height>
-       </rect>
-      </property>
-      <property name="sizePolicy">
-       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-        <horstretch>0</horstretch>
-        <verstretch>0</verstretch>
-       </sizepolicy>
-      </property>
-      <property name="font">
-       <font>
-        <family>Minecraft Rus</family>
-        <pointsize>12</pointsize>
-        <underline>false</underline>
-        <strikeout>false</strikeout>
-        <stylestrategy>NoAntialias</stylestrategy>
-        <kerning>false</kerning>
-       </font>
-      </property>
-      <property name="layoutDirection">
-       <enum>Qt::LeftToRight</enum>
-      </property>
-      <property name="autoFillBackground">
-       <bool>false</bool>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">background: none;
-color: #FFFFFF;
-padding: 0;
-border: none;
-text-decoration: none;
-text-align: center;
-padding-top: 0px;
-</string>
-      </property>
-      <property name="inputMethodHints">
-       <set>Qt::ImhNone</set>
-      </property>
-      <property name="text">
-       <string>Английский</string>
       </property>
       <property name="alignment">
        <set>Qt::AlignCenter</set>
@@ -1139,74 +964,205 @@ padding-top: 0px;
        <set>Qt::NoTextInteraction</set>
       </property>
      </widget>
-     <widget class="QPushButton" name="en_btn">
+     <widget class="QScrollArea" name="scrollArea">
       <property name="enabled">
        <bool>true</bool>
       </property>
       <property name="geometry">
        <rect>
-        <x>17</x>
-        <y>95</y>
-        <width>369</width>
-        <height>36</height>
+        <x>20</x>
+        <y>30</y>
+        <width>371</width>
+        <height>151</height>
        </rect>
       </property>
       <property name="sizePolicy">
        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
         <horstretch>0</horstretch>
-        <verstretch>0</verstretch>
+        <verstretch>100</verstretch>
        </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>371</width>
+        <height>151</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>371</width>
+        <height>151</height>
+       </size>
       </property>
       <property name="font">
        <font>
-        <family>Minecraft Rus</family>
-        <pointsize>12</pointsize>
-        <underline>false</underline>
-        <strikeout>false</strikeout>
         <stylestrategy>NoAntialias</stylestrategy>
         <kerning>false</kerning>
        </font>
-      </property>
-      <property name="mouseTracking">
-       <bool>false</bool>
-      </property>
-      <property name="focusPolicy">
-       <enum>Qt::StrongFocus</enum>
-      </property>
-      <property name="toolTip">
-       <string/>
-      </property>
-      <property name="layoutDirection">
-       <enum>Qt::LeftToRight</enum>
       </property>
       <property name="autoFillBackground">
        <bool>false</bool>
       </property>
       <property name="styleSheet">
-       <string notr="true">QPushButton
+       <string notr="true">QScrollArea
 {
+	background-color:transparent;
 	background: transparent;
 	border: none;
 }
-QPushButton:focus
-{
-	border-image: url(:/buttons/res/lang_btn.png);
-}</string>
+QScrollBar:vertical
+ {
+	border: none;
+    background:none;
+    width:15px;
+	margin: 0px 0px 0px 0px;
+ }
+ QScrollBar::handle:vertical
+ {
+	
+	border-image: url(:/buttons/res/scrollbar.png);
+	background-color: rgb(0, 0, 0);
+	background: rgb(0, 0, 0);
+	border: none;
+ }
+
+ QScrollBar::sub-line:vertical
+ {
+	background-color: rgb(0, 0, 0);
+	background: rgb(0, 0, 0);
+	border: none;
+ }
+
+ QScrollBar::add-line:vertical
+ {
+	background-color: rgb(0, 0, 0);
+	background: rgb(0, 0, 0);
+	border: none;
+ }
+ QScrollBar::sub-line:vertical:hover,QScrollBar::sub-line:vertical:on
+ {
+	background-color: rgb(0, 0, 0);
+	background: rgb(0, 0, 0);
+	border: none;
+ }
+ QScrollBar::add-line:vertical:hover, QScrollBar::add-line:vertical:on
+ {
+	background-color: rgb(0, 0, 0);
+	background: rgb(0, 0, 0);
+	border: none;
+ }
+
+ QScrollBar::up-arrow:vertical, QScrollBar::down-arrow:vertical
+ {
+	background-color: rgb(0, 0, 0);
+	background: rgb(0, 0, 0);
+	border: none;
+ }
+ QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical
+ {
+	background-color: rgb(0, 0, 0);
+	background: rgb(0, 0, 0);
+	border: none;
+ }</string>
       </property>
-      <property name="text">
-       <string/>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
       </property>
-      <property name="flat">
+      <property name="frameShadow">
+       <enum>QFrame::Plain</enum>
+      </property>
+      <property name="lineWidth">
+       <number>0</number>
+      </property>
+      <property name="verticalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOn</enum>
+      </property>
+      <property name="horizontalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
+      <property name="widgetResizable">
        <bool>false</bool>
       </property>
+      <property name="alignment">
+       <set>Qt::AlignBottom|Qt::AlignJustify</set>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>-17</y>
+         <width>402</width>
+         <height>200</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:transparent;
+background: transparent;
+border: none;</string>
+       </property>
+       <widget class="QLabel" name="label1_3">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>20</y>
+          <width>301</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="font">
+         <font>
+          <family>Minecraft Rus</family>
+          <pointsize>12</pointsize>
+          <underline>false</underline>
+          <strikeout>false</strikeout>
+          <stylestrategy>NoAntialias</stylestrategy>
+          <kerning>false</kerning>
+         </font>
+        </property>
+        <property name="layoutDirection">
+         <enum>Qt::LeftToRight</enum>
+        </property>
+        <property name="autoFillBackground">
+         <bool>false</bool>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background: none;
+color: #FFFFFF;
+padding: 0;
+border: none;
+text-decoration: none;
+text-align: center;
+padding-top: 0px;
+</string>
+        </property>
+        <property name="inputMethodHints">
+         <set>Qt::ImhNone</set>
+        </property>
+        <property name="text">
+         <string>Русский</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+        <property name="textInteractionFlags">
+         <set>Qt::NoTextInteraction</set>
+        </property>
+       </widget>
+      </widget>
      </widget>
-     <zorder>ru_btn</zorder>
-     <zorder>en_btn</zorder>
-     <zorder>label3_2</zorder>
      <zorder>doneButton</zorder>
-     <zorder>label1_2</zorder>
+     <zorder>label3_2</zorder>
      <zorder>labelDone</zorder>
-     <zorder>label2_2</zorder>
+     <zorder>scrollArea</zorder>
     </widget>
    </widget>
   </widget>

@@ -16,6 +16,8 @@
     <file>res/click.wav</file>
   </qresource>
   <qresource prefix="buttons">
+    <file>res/scrollbar.png</file>
+    <file>res/lang_btn.png</file>
     <file>res/btn_lang_hover.png</file>
     <file>res/btn_lang.png</file>
     <file>res/btn_big.png</file>

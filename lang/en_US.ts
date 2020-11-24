@@ -6,47 +6,82 @@
     <message>
         <location filename="../main.py" line="71"/>
         <source>?????</source>
-        <translation type="obsolete">Languages</translation>
-    </message>
-    <message>
-        <location filename="../main.py" line="71"/>
-        <source>Языки</source>
-        <translation>Languages</translation>
+        <translation type="obsolete">Language...</translation>
     </message>
     <message>
         <location filename="../main.py" line="72"/>
-        <source>Русский</source>
-        <translation>Russian</translation>
+        <source>???????</source>
+        <translation type="obsolete">Russian</translation>
     </message>
     <message>
         <location filename="../main.py" line="73"/>
-        <source>Английский</source>
-        <translation>English</translation>
+        <source>??????????</source>
+        <translation type="obsolete">English</translation>
     </message>
     <message>
         <location filename="../main.py" line="74"/>
-        <source>Готово</source>
-        <translation>Done</translation>
+        <source>??????</source>
+        <translation type="obsolete">Done</translation>
     </message>
     <message>
         <location filename="../main.py" line="126"/>
+        <source>???????  ?????????</source>
+        <translation type="obsolete">Open  resourcepack</translation>
+    </message>
+    <message>
+        <location filename="../main.py" line="127"/>
+        <source>???????????</source>
+        <translation type="obsolete">Additional</translation>
+    </message>
+    <message>
+        <location filename="../main.py" line="128"/>
+        <source>?????????...</source>
+        <translation type="obsolete">Settings...</translation>
+    </message>
+    <message>
+        <location filename="../main.py" line="129"/>
+        <source>??????????????</source>
+        <translation type="obsolete">Convert</translation>
+    </message>
+    <message>
+        <location filename="../main.py" line="88"/>
         <source>Открыть  ресурспак</source>
         <translation>Open  resourcepack</translation>
     </message>
     <message>
-        <location filename="../main.py" line="127"/>
+        <location filename="../main.py" line="89"/>
         <source>Модификации</source>
         <translation>Additional</translation>
     </message>
     <message>
-        <location filename="../main.py" line="128"/>
+        <location filename="../main.py" line="90"/>
         <source>Настройки...</source>
-        <translation>Settings...</translation>
+        <translation>Options...</translation>
     </message>
     <message>
-        <location filename="../main.py" line="129"/>
+        <location filename="../main.py" line="91"/>
         <source>Конвертировать</source>
         <translation>Convert</translation>
+    </message>
+    <message>
+        <location filename="../main.py" line="83"/>
+        <source>Язык...</source>
+        <translation>Laguage...</translation>
+    </message>
+    <message>
+        <location filename="../main.py" line="84"/>
+        <source>Русский</source>
+        <translation>Russian</translation>
+    </message>
+    <message>
+        <location filename="../main.py" line="85"/>
+        <source>Английский</source>
+        <translation>English</translation>
+    </message>
+    <message>
+        <location filename="../main.py" line="86"/>
+        <source>Готово</source>
+        <translation>Done</translation>
     </message>
 </context>
 </TS>
