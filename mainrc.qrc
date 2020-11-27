@@ -1,5 +1,6 @@
 <RCC>
   <qresource prefix="background">
+    <file>res/background_label.png</file>
     <file>res/background.png</file>
   </qresource>
   <qresource prefix="lang">

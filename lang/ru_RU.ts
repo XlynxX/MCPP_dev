@@ -4,84 +4,44 @@
 <context>
     <name>app</name>
     <message>
-        <location filename="../main.py" line="71"/>
-        <source>?????</source>
-        <translation type="obsolete">Язык...</translation>
-    </message>
-    <message>
-        <location filename="../main.py" line="72"/>
-        <source>???????</source>
-        <translation type="obsolete">Русский</translation>
-    </message>
-    <message>
-        <location filename="../main.py" line="73"/>
-        <source>??????????</source>
-        <translation type="obsolete">Английский</translation>
-    </message>
-    <message>
-        <location filename="../main.py" line="74"/>
-        <source>??????</source>
-        <translation type="obsolete">Готово</translation>
-    </message>
-    <message>
-        <location filename="../main.py" line="126"/>
-        <source>???????  ?????????</source>
-        <translation type="obsolete">Открыть  ресурспак</translation>
-    </message>
-    <message>
-        <location filename="../main.py" line="127"/>
-        <source>???????????</source>
-        <translation type="obsolete">Модификации</translation>
-    </message>
-    <message>
-        <location filename="../main.py" line="128"/>
-        <source>?????????...</source>
-        <translation type="obsolete">Настройки...</translation>
-    </message>
-    <message>
-        <location filename="../main.py" line="129"/>
-        <source>??????????????</source>
-        <translation type="obsolete">Конвертировать</translation>
-    </message>
-    <message>
-        <location filename="../main.py" line="88"/>
+        <location filename="../main.py" line="106"/>
         <source>Открыть  ресурспак</source>
-        <translation></translation>
+        <translation>Открыть  ресурспак</translation>
     </message>
     <message>
-        <location filename="../main.py" line="89"/>
+        <location filename="../main.py" line="107"/>
         <source>Модификации</source>
-        <translation></translation>
+        <translation>Модификации</translation>
     </message>
     <message>
-        <location filename="../main.py" line="90"/>
+        <location filename="../main.py" line="108"/>
         <source>Настройки...</source>
-        <translation></translation>
+        <translation>Настройки...</translation>
     </message>
     <message>
-        <location filename="../main.py" line="91"/>
+        <location filename="../main.py" line="109"/>
         <source>Конвертировать</source>
-        <translation></translation>
+        <translation>Конвертировать</translation>
     </message>
     <message>
-        <location filename="../main.py" line="83"/>
+        <location filename="../main.py" line="101"/>
         <source>Язык...</source>
         <translation>Язык...</translation>
     </message>
     <message>
-        <location filename="../main.py" line="84"/>
-        <source>Русский</source>
-        <translation></translation>
+        <location filename="../main.py" line="102"/>
+        <source>Русский  (Россия)</source>
+        <translation>Русский  (Россия)</translation>
     </message>
     <message>
-        <location filename="../main.py" line="85"/>
-        <source>Английский</source>
-        <translation></translation>
+        <location filename="../main.py" line="103"/>
+        <source>English  (US)</source>
+        <translation>English  (US)</translation>
     </message>
     <message>
-        <location filename="../main.py" line="86"/>
+        <location filename="../main.py" line="104"/>
         <source>Готово</source>
-        <translation></translation>
+        <translation>Готово</translation>
     </message>
 </context>
 </TS>

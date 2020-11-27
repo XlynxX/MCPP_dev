@@ -1,8 +1,8 @@
 from PySide2 import QtCore, QtGui, QtWidgets
 from PySide2.QtMultimedia import QSound
-from PySide2.QtWidgets import *
-from PySide2.QtCore import *
-from PySide2.QtGui import *
+from PySide2.QtWidgets import QLabel, QGraphicsDropShadowEffect, QPushButton, QApplication
+from PySide2.QtCore import QRunnable, Slot, QThreadPool
+from PySide2.QtGui import QColor
 from locale import getdefaultlocale
 import MCPP
 import sys
@@ -45,8 +45,26 @@ class MainScreen(QtWidgets.QMainWindow, MCPP.Ui_MainWindow):
             self.shadow.setColor(QColor(63, 63, 63, 255))
             self.shadow.setBlurRadius(0)
             child.setGraphicsEffect(self.shadow)
+            # Тени
+
             # Атрибут игнорирования QLabel мышкой
             child.setAttribute(QtCore.Qt.WA_TransparentForMouseEvents, True)
+
+        # Тени для фона окна настроек
+        self.shadowback1 = QGraphicsDropShadowEffect(self)
+        self.shadowback1.setXOffset(0)
+        self.shadowback1.setYOffset(4)
+        self.shadowback1.setColor(QColor(0, 0, 0, 255))
+        self.shadowback1.setBlurRadius(10)
+        self.labelback1.setGraphicsEffect(self.shadowback1)
+
+        self.shadowback2 = QGraphicsDropShadowEffect(self)
+        self.shadowback2.setXOffset(0)
+        self.shadowback2.setYOffset(-4)
+        self.shadowback2.setColor(QColor(0, 0, 0, 255))
+        self.shadowback2.setBlurRadius(10)
+        self.labelback2.setGraphicsEffect(self.shadowback2)
+        # Тени для фона окна настроек
             
         # Повторяющиеся для QPushButton функции
         for child in self.findChildren(QPushButton):
@@ -81,8 +99,8 @@ class MainScreen(QtWidgets.QMainWindow, MCPP.Ui_MainWindow):
             
             # Окно настроек
             self.label3_2.setText(QApplication.translate('app', 'Язык...'))
-            self.label1_2.setText(QApplication.translate('app', 'Русский'))
-            self.label2_2.setText(QApplication.translate('app', 'Английский'))
+            self.label1_2.setText(QApplication.translate('app', 'Русский  (Россия)'))
+            self.label2_2.setText(QApplication.translate('app', 'English  (US)'))
             self.labelDone.setText(QApplication.translate('app', 'Готово'))
             # Главное окно
             self.label1.setText(QApplication.translate('app', 'Открыть  ресурспак'))
