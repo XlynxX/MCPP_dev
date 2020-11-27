@@ -13,3 +13,5 @@ Use pyinstaller to compile.
 ```bash
 pyinstaller --onefile -w -i res\MCPP.ico main.py
 ```
+## License
+[GNU AGPL v3.0](https://github.com/XlynxX/MCPP_dev/blob/main/LICENSE)
